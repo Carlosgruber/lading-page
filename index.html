@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Curso online de produtividade: aprenda técnicas práticas de gestão do tempo, foco e execução para transformar sua rotina em 30 dias.">
+    <meta name="keywords" content="produtividade, curso online, gestão de tempo, foco, organização">
+    <meta name="author" content="ProdutividadePro">
+
+    <title>Curso de Produtividade - ProdutividadePro</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" role="banner">
+        <div class="container">
+            <div class="header-content">
+                <a href="#home" class="logo" aria-label="Ir para o início">
+                    <i class="fas fa-rocket"></i>
+                    <span>ProdutividadePro</span>
+                </a>
+
+                <nav class="nav" role="navigation" aria-label="Menu principal">
+                    <ul class="nav-list">
+                        <li><a href="#home" class="nav-link">Início</a></li>
+                        <li><a href="#beneficios" class="nav-link">Benefícios</a></li>
+                        <li><a href="#depoimentos" class="nav-link">Depoimentos</a></li>
+                        <li><a href="#contato" class="nav-link">Contato</a></li>
+                    </ul>
+                </nav>
+
+                <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+                    <i class="fas fa-bars" aria-hidden="true"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero / Destaque do Produto -->
+    <section id="home" class="hero" aria-labelledby="hero-title">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text slide-up">
+                    <h1 id="hero-title" class="hero-title">Transforme sua <span class="highlight">Produtividade</span> em 30 dias</h1>
+                    <p class="hero-description">Um método prático, validado por milhares de alunos, para você dominar gestão de tempo, foco e execução. Aumente seus resultados sem trabalhar mais horas.</p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary cta-primary" onclick="scrollToContact()">
+                            <i class="fas fa-play"></i>
+                            Inscreva-se agora
+                        </button>
+                        <button class="btn btn-secondary" onclick="scrollToBeneficios()">
+                            <i class="fas fa-info-circle"></i>
+                            Saiba mais
+                        </button>
+                    </div>
+                    <ul class="hero-badges" aria-label="Destaques do curso">
+                        <li><i class="fas fa-check"></i> Acesso vitalício</li>
+                        <li><i class="fas fa-check"></i> 10.000+ alunos</li>
+                        <li><i class="fas fa-check"></i> Certificado de conclusão</li>
+                    </ul>
+                </div>
+
+                <div class="hero-image slide-up" aria-hidden="true">
+                    <picture>
+                        <source srcset="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=900&auto=format&fit=crop&q=60" media="(min-width: 768px)">
+                        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=700&auto=format&fit=crop&q=60" alt="Mockup do curso de produtividade em um laptop e celular" loading="lazy">
+                    </picture>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefícios -->
+    <section id="beneficios" class="benefits" aria-labelledby="benefits-title">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 id="benefits-title" class="section-title">Por que escolher nosso curso?</h2>
+                <p class="section-description">Benefícios práticos para você aplicar no dia a dia e ver resultados reais.</p>
+            </div>
+
+            <div class="benefits-grid">
+                <article class="benefit-card slide-up">
+                    <div class="benefit-icon"><i class="fas fa-clock"></i></div>
+                    <h3 class="benefit-title">Gestão de Tempo</h3>
+                    <p class="benefit-description">Organize sua rotina e elimine distrações com técnicas comprovadas.</p>
+                </article>
+
+                <article class="benefit-card slide-up">
+                    <div class="benefit-icon"><i class="fas fa-target"></i></div>
+                    <h3 class="benefit-title">Metas Claras</h3>
+                    <p class="benefit-description">Defina objetivos SMART e priorize as ações que trazem resultado.</p>
+                </article>
+
+                <article class="benefit-card slide-up">
+                    <div class="benefit-icon"><i class="fas fa-brain"></i></div>
+                    <h3 class="benefit-title">Foco Máximo</h3>
+                    <p class="benefit-description">Mantenha concentração com técnicas de foco e hábitos de alta performance.</p>
+                </article>
+
+                <article class="benefit-card slide-up">
+                    <div class="benefit-icon"><i class="fas fa-trophy"></i></div>
+                    <h3 class="benefit-title">Resultados Reais</h3>
+                    <p class="benefit-description">Metodologia validada por milhares de alunos ao redor do Brasil.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Depoimentos - Carrossel -->
+    <section id="depoimentos" class="testimonials" aria-labelledby="testimonials-title">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 id="testimonials-title" class="section-title">O que nossos alunos dizem</h2>
+                <p class="section-description">Confira relatos reais de quem já aplicou o método e transformou a rotina.</p>
+            </div>
+
+            <div class="carousel" aria-roledescription="carousel" aria-label="Carrossel de depoimentos">
+                <div class="carousel-track" role="group">
+                    <article class="testimonial-card carousel-slide">
+                        <div class="testimonial-avatar">
+                            <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=150&h=150&fit=crop&crop=face" alt="Foto de Maria Silva">
+                        </div>
+                        <div class="testimonial-content">
+                            <p class="testimonial-text">“Em 3 semanas, reduzi pela metade o tempo das minhas tarefas e fui elogiada pela equipe. O curso é direto ao ponto!”</p>
+                            <div class="testimonial-author">
+                                <h4 class="author-name">Maria Silva</h4>
+                                <p class="author-role">Empreendedora</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="testimonial-card carousel-slide">
+                        <div class="testimonial-avatar">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face" alt="Foto de João Santos">
+                        </div>
+                        <div class="testimonial-content">
+                            <p class="testimonial-text">“Apliquei as técnicas de foco e consegui minha promoção. A organização diária mudou completamente!”</p>
+                            <div class="testimonial-author">
+                                <h4 class="author-name">João Santos</h4>
+                                <p class="author-role">Analista de Sistemas</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="testimonial-card carousel-slide">
+                        <div class="testimonial-avatar">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face" alt="Foto de Ana Costa">
+                        </div>
+                        <div class="testimonial-content">
+                            <p class="testimonial-text">“Finalmente consegui equilibrar trabalho e vida pessoal. As ferramentas são simples e funcionam!”</p>
+                            <div class="testimonial-author">
+                                <h4 class="author-name">Ana Costa</h4>
+                                <p class="author-role">Designer</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="carousel-dots" role="tablist" aria-label="Seleção de depoimentos"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato / Formulário -->
+    <section id="contato" class="contact" aria-labelledby="contact-title">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info slide-up">
+                    <h2 id="contact-title" class="contact-title">Pronto para transformar sua produtividade?</h2>
+                    <p class="contact-description">Inscreva-se abaixo para receber os detalhes do curso e uma oferta especial por tempo limitado.</p>
+                    <div class="contact-features">
+                        <div class="feature"><i class="fas fa-check"></i><span>Conteúdo atualizado continuamente</span></div>
+                        <div class="feature"><i class="fas fa-check"></i><span>Comunidade exclusiva de alunos</span></div>
+                        <div class="feature"><i class="fas fa-check"></i><span>Garantia de 7 dias</span></div>
+                    </div>
+                </div>
+
+                <div class="contact-form slide-up">
+                    <form id="contactForm" class="form" novalidate>
+                        <div class="form-group">
+                            <label for="name" class="form-label">Nome completo</label>
+                            <input type="text" id="name" name="name" class="form-input" placeholder="Seu nome" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email" class="form-label">E-mail</label>
+                            <input type="email" id="email" name="email" class="form-input" placeholder="seu@email.com" required>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <i class="fas fa-paper-plane"></i>
+                            Quero me inscrever
+                        </button>
+                        <p class="form-disclaimer">Ao enviar, você concorda em receber comunicações sobre o curso. Sem spam.</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#home" class="logo" aria-label="Voltar ao início">
+                        <i class="fas fa-rocket"></i>
+                        <span>ProdutividadePro</span>
+                    </a>
+                    <p class="footer-description">Transformando vidas através da produtividade e gestão do tempo.</p>
+                </div>
+
+                <div class="footer-social">
+                    <h4>Nos siga</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 ProdutividadePro. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+</body>
+</html> 
